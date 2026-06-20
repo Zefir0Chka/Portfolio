@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="km_surfaceCard" format="reference|color" />
+    <attr name="km_textPrimary" format="reference|color" />
+    <attr name="km_textSecondary" format="reference|color" />
+    <attr name="km_orbitLine" format="reference|color" />
+    <attr name="km_accentPrimary" format="reference|color" />
+    <attr name="km_accentSecondary" format="reference|color" />
+    <attr name="km_spaceBackground" format="reference" />
+</resources>
+

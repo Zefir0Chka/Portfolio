@@ -1,0 +1,17 @@
+<resources>
+    <string name="settings">Ajustes</string>
+    <string name="settings_language">Idioma de la app</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="register_button">Registrarse</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="email_hint">Correo/teléfono</string>
+    <string name="profile">Perfil</string>
+    <string name="courses">Cursos</string>
+    <string name="reviews">Reseñas</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="tests_and_checks">Pruebas</string>
+    <string name="tasks">Tareas</string>
+    <string name="continue_learning">Continuar</string>
+    <string name="select_planet_subtitle">Elige un planeta — elige un lenguaje</string>
+</resources>
+

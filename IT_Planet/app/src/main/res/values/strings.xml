@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">KillMePlease</string>
+    <string name="menu">Меню</string>
+    <string name="theme">Тема</string>
+    <string name="user_avatar">Аватар пользователя</string>
+    <string name="choose_language">Выбери язык и начни курс</string>
+    <string name="continue_learning">Продолжить с места остановки</string>
+    <string name="profile">Личный кабинет</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_language">Язык приложения</string>
+    <string name="reviews">Отзывы</string>
+    <string name="courses">Курсы</string>
+    <string name="donate">Донат</string>
+    <string name="login_title">Регистрация и вход</string>
+    <string name="nickname_hint">Введите никнейм</string>
+    <string name="login_button">Войти</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Телефон</string>
+    <string name="password_hint">Пароль</string>
+    <string name="status_hint">Статус профиля</string>
+    <string name="go_home">Главная</string>
+    <string name="go_courses">Курсы</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="logout">Выйти из аккаунта</string>
+
+    <string name="access_code_register_title">Регистрация по коду доступа</string>
+    <string name="access_code_login_button">Вход по коду доступа</string>
+    <string name="login_help_text">Для входа укажи эл-почту/телефон и пароль. Для регистрации укажи эл-почту/телефон и пароль.</string>
+
+    <string name="tests_and_checks">Проверка и тесты</string>
+    <string name="tasks">Задачи</string>
+    <string name="reviews_and_suggestions">Отзывы и предложения</string>
+
+    <string name="admin_cabinet">Кабинет администратора</string>
+    <string name="create_access_code">Создать код доступа</string>
+    <string name="show_access_codes">Показать активные коды доступа</string>
+    <string name="active_access_codes">Активные коды доступа</string>
+
+    <string name="courses_hint">Нажмите на тему, чтобы открыть подробный урок.</string>
+    <string name="topic_open_ide">Открыть IDE и решить задачу</string>
+    <string name="topic_mark_complete">Отметить тему как изученную</string>
+
+    <string name="run">Запуск</string>
+    <string name="check">Проверка</string>
+    <string name="output_check">Output / Проверка</string>
+
+    <string name="select_planet_subtitle">Выбери планету — выбери язык</string>
+</resources>

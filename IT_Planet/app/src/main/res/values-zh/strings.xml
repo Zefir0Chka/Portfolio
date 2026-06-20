@@ -1,0 +1,17 @@
+<resources>
+    <string name="settings">设置</string>
+    <string name="settings_language">应用语言</string>
+    <string name="login_button">登录</string>
+    <string name="register_button">注册</string>
+    <string name="password_hint">密码</string>
+    <string name="email_hint">邮箱/电话</string>
+    <string name="profile">个人中心</string>
+    <string name="courses">课程</string>
+    <string name="reviews">反馈</string>
+    <string name="logout">退出登录</string>
+    <string name="tests_and_checks">测试与检查</string>
+    <string name="tasks">任务</string>
+    <string name="continue_learning">继续学习</string>
+    <string name="select_planet_subtitle">选择星球，选择语言</string>
+</resources>
+

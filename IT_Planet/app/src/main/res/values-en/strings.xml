@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">KillMePlease</string>
+    <string name="menu">Menu</string>
+    <string name="theme">Theme</string>
+    <string name="user_avatar">User avatar</string>
+    <string name="choose_language">Choose a language and start</string>
+    <string name="continue_learning">Continue where you left off</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="settings_language">App language</string>
+    <string name="reviews">Reviews</string>
+    <string name="courses">Courses</string>
+    <string name="donate">Donate</string>
+    <string name="login_title">Sign in / Register</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="login_button">Sign in</string>
+    <string name="register_button">Register</string>
+    <string name="email_hint">Email / phone</string>
+    <string name="phone_hint">Phone</string>
+    <string name="password_hint">Password</string>
+    <string name="status_hint">Status</string>
+    <string name="go_home">Home</string>
+    <string name="go_courses">Courses</string>
+    <string name="save_changes">Save changes</string>
+    <string name="logout">Log out</string>
+
+    <string name="access_code_register_title">Access code sign-up</string>
+    <string name="access_code_login_button">Access code</string>
+    <string name="login_help_text">For sign in enter email/phone and password.</string>
+
+    <string name="tests_and_checks">Tests &amp; checks</string>
+    <string name="tasks">Tasks</string>
+    <string name="reviews_and_suggestions">Reviews &amp; suggestions</string>
+
+    <string name="admin_cabinet">Admin panel</string>
+    <string name="create_access_code">Create access code</string>
+    <string name="show_access_codes">Show active access codes</string>
+    <string name="active_access_codes">Active access codes</string>
+
+    <string name="courses_hint">Tap a topic to open the lesson.</string>
+    <string name="topic_open_ide">Open IDE and solve</string>
+    <string name="topic_mark_complete">Mark as learned</string>
+
+    <string name="run">Run</string>
+    <string name="check">Check</string>
+    <string name="output_check">Output / Check</string>
+
+    <string name="select_planet_subtitle">Pick a planet — pick a language</string>
+</resources>
+

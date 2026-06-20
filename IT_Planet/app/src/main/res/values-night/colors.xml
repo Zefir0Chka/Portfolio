@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cold / dark palette -->
+    <color name="space_bg_top">#05060A</color>
+    <color name="space_bg_bottom">#121A2E</color>
+
+    <color name="surface_glass">#1A2238</color>
+    <color name="surface_glass_2">#212B45</color>
+
+    <color name="text_primary">#E7ECFF</color>
+    <color name="text_secondary">#B8C3F2</color>
+
+    <color name="accent_primary">#7C4DFF</color>
+    <color name="accent_secondary">#00B0FF</color>
+
+    <color name="orbit_line">#3D4A7A</color>
+</resources>
+

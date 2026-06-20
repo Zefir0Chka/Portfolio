@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/txt_topic_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/km_textPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_topic_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="?attr/km_textPrimary"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_watch_video"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Смотреть видео по теме" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/examples_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_example_1"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_task_panel"
+                    android:padding="10dp"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/img_example_2"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_task_panel"
+                    android:padding="10dp"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/img_example_3"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_task_panel"
+                    android:padding="10dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txt_topic_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_task_panel"
+            android:textColor="?attr/km_textPrimary"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_ide"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/topic_open_ide" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_mark_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/topic_mark_complete" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Warm / light palette -->
+    <color name="space_bg_top">#FFF3E0</color>
+    <color name="space_bg_bottom">#64B5F6</color>
+
+    <color name="surface_glass">#FFFFFF</color>
+    <color name="surface_glass_2">#FFF8E1</color>
+
+    <color name="text_primary">#1B1E2B</color>
+    <color name="text_secondary">#3C425B</color>
+
+    <color name="accent_primary">#FF8F00</color>
+    <color name="accent_secondary">#7C4DFF</color>
+
+    <color name="orbit_line">#80FFFFFF</color>
+</resources>

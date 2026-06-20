@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Smooth deep-space base -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="300"
+                android:startColor="#050A16"
+                android:centerColor="#0B182A"
+                android:endColor="#14243B"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Wide nebula cloud (upper-left) -->
+    <item android:left="-120dp" android:top="-90dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#205A9EFF"
+                android:endColor="#00000000"
+                android:startColor="#153C68BA"
+                android:type="radial"
+                android:gradientRadius="320dp" />
+        </shape>
+    </item>
+
+    <!-- Wide nebula cloud (lower-right) -->
+    <item android:right="-140dp" android:bottom="-110dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#1E4E78D8"
+                android:endColor="#00000000"
+                android:startColor="#123A5E8F"
+                android:type="radial"
+                android:gradientRadius="330dp" />
+        </shape>
+    </item>
+
+    <!-- Central soft haze to remove hard divisions -->
+    <item android:left="-40dp" android:top="40dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#143B76B8"
+                android:endColor="#00000000"
+                android:startColor="#1033558A"
+                android:type="radial"
+                android:gradientRadius="300dp" />
+        </shape>
+    </item>
+
+    <!-- Stars are animated in MainActivity layers -->
+</layer-list>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppWindowAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/screen_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/screen_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/screen_pop_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/screen_pop_exit</item>
+    </style>
+</resources>

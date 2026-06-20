@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Smooth daylight space base -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="305"
+                android:startColor="#CFE6FF"
+                android:centerColor="#B3D7FF"
+                android:endColor="#8BBEF4"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Warm cloud -->
+    <item android:top="-100dp" android:left="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#22FFD47A"
+                android:endColor="#00FFFFFF"
+                android:startColor="#1EFFB95F"
+                android:type="radial"
+                android:gradientRadius="300dp" />
+        </shape>
+    </item>
+
+    <!-- Cool cloud -->
+    <item android:right="-110dp" android:bottom="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#207A8ED8"
+                android:endColor="#00FFFFFF"
+                android:startColor="#166788C7"
+                android:type="radial"
+                android:gradientRadius="320dp" />
+        </shape>
+    </item>
+
+    <!-- Mid haze to blend background into one field -->
+    <item android:left="-50dp" android:top="50dp">
+        <shape android:shape="oval">
+            <gradient
+                android:centerColor="#16FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:startColor="#12C0E3FF"
+                android:type="radial"
+                android:gradientRadius="290dp" />
+        </shape>
+    </item>
+
+    <!-- Stars are animated in MainActivity layers -->
+</layer-list>

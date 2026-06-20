@@ -1,0 +1,17 @@
+<resources>
+    <string name="settings">الإعدادات</string>
+    <string name="settings_language">لغة التطبيق</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="register_button">إنشاء حساب</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="email_hint">البريد/الهاتف</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="courses">الدورات</string>
+    <string name="reviews">الملاحظات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="tests_and_checks">الاختبارات</string>
+    <string name="tasks">المهام</string>
+    <string name="continue_learning">متابعة التعلم</string>
+    <string name="select_planet_subtitle">اختر كوكباً — اختر لغة</string>
+</resources>
+

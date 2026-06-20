@@ -1,0 +1,17 @@
+<resources>
+    <string name="settings">Налады</string>
+    <string name="settings_language">Мова прыкладання</string>
+    <string name="login_button">Увайсці</string>
+    <string name="register_button">Зарэгістравацца</string>
+    <string name="password_hint">Пароль</string>
+    <string name="email_hint">Эл-пошта/тэлефон</string>
+    <string name="profile">Профіль</string>
+    <string name="courses">Курсы</string>
+    <string name="reviews">Водгукі</string>
+    <string name="logout">Выйсці</string>
+    <string name="tests_and_checks">Тэсты</string>
+    <string name="tasks">Заданні</string>
+    <string name="continue_learning">Працягнуць</string>
+    <string name="select_planet_subtitle">Абяры планету — абяры мову</string>
+</resources>
+

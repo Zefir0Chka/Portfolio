@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.KillMePlease" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_space_dark</item>
+        <item name="km_spaceBackground">@drawable/bg_space_dark</item>
+        <item name="km_surfaceCard">@color/surface_glass</item>
+        <item name="km_textPrimary">@color/text_primary</item>
+        <item name="km_textSecondary">@color/text_secondary</item>
+        <item name="km_orbitLine">@color/orbit_line</item>
+        <item name="km_accentPrimary">@color/accent_primary</item>
+        <item name="km_accentSecondary">@color/accent_secondary</item>
+        <item name="android:windowAnimationStyle">@style/AppWindowAnimation</item>
+    </style>
+
+    <style name="Theme.KillMePlease" parent="Base.Theme.KillMePlease" />
+</resources>
