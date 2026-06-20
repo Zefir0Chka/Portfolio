@@ -1,0 +1,334 @@
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #D2B48C;
+    --accent-color: #DEB887;
+    --background-color: #FFF8DC;
+    --text-color: #4A2C2A;
+    --light-text: #8B4513;
+    --border-color: #CD853F;
+    --card-bg: #FFF8DC;
+    --hover-color: #CD853F;
+    --success-color: #8B4513;
+    --error-color: #8B4513;
+    --shadow-color: rgba(139, 69, 19, 0.2);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-image: url('https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--background-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.card-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-control {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem var(--shadow-color);
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: var(--background-color);
+}
+
+.alert-danger {
+    background-color: var(--error-color);
+    border-color: var(--error-color);
+    color: var(--background-color);
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+}
+
+.badge-secondary {
+    background-color: var(--secondary-color);
+}
+
+.timeline-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.timeline-item::before {
+    background-color: var(--primary-color);
+}
+
+.timeline-date {
+    color: var(--primary-color);
+}
+
+.map-container {
+    border: 2px solid var(--border-color);
+}
+
+.filter-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.filter-title {
+    color: var(--primary-color);
+}
+
+.event-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.event-date {
+    color: var(--primary-color);
+}
+
+.event-title {
+    color: var(--text-color);
+}
+
+.event-description {
+    color: var(--light-text);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Обновление цветов для интерактивных элементов */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Обновление цветов для выпадающих списков */
+.dropdown-menu {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Обновление цветов для чекбоксов и радио-кнопок */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Обновление цветов для прогресс-баров */
+.progress {
+    background-color: var(--secondary-color);
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+/* Обновление цветов для таблиц */
+.table {
+    color: var(--text-color);
+}
+
+.table thead th {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+}
+
+.table td, .table th {
+    border-color: var(--border-color);
+}
+
+/* Обновление цветов для пагинации */
+.page-link {
+    color: var(--primary-color);
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.page-link:hover {
+    color: var(--hover-color);
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Обновление цветов для тултипов */
+.tooltip-inner {
+    background-color: var(--primary-color);
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--primary-color);
+}
+
+/* Обновление цветов для попапов */
+.popover {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.popover-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.popover-body {
+    color: var(--text-color);
+}
+
+/* Обновление цветов для аккордеона */
+.accordion-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.accordion-body {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+/* Обновление цветов для карусели */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+}
+
+.carousel-indicators button {
+    background-color: var(--secondary-color);
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
+}
+
+/* Обновление цветов для спиннера */
+.spinner-border {
+    color: var(--primary-color);
+}
+
+/* Обновление цветов для тостов */
+.toast {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.toast-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Обновление цветов для модального фона */
+.modal-backdrop {
+    background-color: rgba(139, 69, 19, 0.5);
+}
+
+/* Обновление цветов для скроллбара */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
+} 

@@ -1,0 +1,1962 @@
+
+
+.main-wrapper {
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.photo-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-stack img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 12px; /* Скруглённые углы */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Лёгкая тень */
+}
+
+
+body {
+   justify-content: center;
+   min-height: 100vh;
+   background-color: #f0f0f0;
+   margin: 0;
+}
+.gallery {
+   display: flex;
+   justify-content: space-around;
+   width: 60%;
+   margin-left: 10%;
+   margin-top: 200px;
+   margin-block: 7%;
+}
+.galleryy {
+   display: flex;
+   justify-content: space-around;
+   width: 60%;
+   margin-left: 20%;
+   margin-bottom: 5%;
+  
+}
+.item {
+   text-align: center;
+   margin: 5px;
+   
+}
+img {
+   max-width: 100%;
+   height: 200px;
+   border-radius: 8px;
+   width: 350px;
+  object-fit: cover;
+}
+.caption {
+   margin-top: 8px;
+   font-size: 17px;
+   color: #333;
+}
+
+
+.product-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+}
+.product-item {
+   background: #ffffff;
+   border: 1px solid #dddddd;
+   border-radius: 5px;
+   margin: 15px;
+   padding: 15px;
+   width: 400px;
+   text-align: center;
+}
+.montash {
+   background: #ffffff;
+   border: 1px solid #dddddd;
+   border-radius: 5px;
+   margin: 15px;
+   padding: 15px;
+   max-width:  400px;
+   text-align: center;
+}
+.montash-list {
+   display: flex
+;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+}
+.product-item img {
+   max-width: 400px;
+   max-height: 600px;
+}
+.price {
+   display: block;
+   margin-top: 15px;
+   margin: 10px;
+   font-weight: bold;
+}
+button:hover {
+   background-color: #218838;
+}
+
+p{
+   margin: 5px;
+   max-height: 70px;
+   max-width: 500px;
+   margin-top: 10px;
+}
+
+.footer-section {
+ background: #cecece33;
+ position: relative;
+}
+.footer-cta {
+ border-bottom: 1px solid #373636;
+}
+.single-cta i {
+
+ font-size: 30px;
+ float: left;
+ margin-top: 8px;
+}
+.cta-text {
+ padding-left: 15px;
+ display: inline-block;
+ margin-right: 20px;
+}
+.cta-text h4 {
+ color: #000000;
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom: 2px;
+}
+.cta-text span {
+ color: #000000;
+ font-size: 15px;
+}
+.footer-content {
+ position: relative;
+ z-index: 2;
+}
+.footer-pattern img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 330px;
+ background-size: cover;
+ background-position: 100% 100%;
+}
+.footer-logo {
+ margin-bottom: 30px;
+}
+.footer-logo img {
+   max-width: 200px;
+   height: 120px;
+}
+.footer-text p {
+ margin-bottom: 14px;
+ font-size: 14px;
+     color: #000000;
+ line-height: 28px;
+}
+.footer-social-icon span {
+ color: #000000;
+ display: block;
+ font-size: 20px;
+ font-weight: 700;
+ font-family: 'Poppins', sans-serif;
+ margin-bottom: 20px;
+}
+.footer-social-icon a {
+ color:  #000000;
+ font-size: 16px;
+ margin-right: 15px;
+}
+.footer-social-icon i {
+ height: 40px;
+ width: 40px;
+ text-align: center;
+ line-height: 38px;
+ border-radius: 50%;
+}
+.footer-widget-heading h3 {
+ color: #000000;
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom: 40px;
+ position: relative;
+}
+.footer-widget-heading h3::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -15px;
+ height: 2px;
+ width: 50px;  
+}
+.footer-widget ul li {
+ display: inline-block;
+ float: left;
+ width: 50%;
+ margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+ color: #ff5e14;
+}
+.footer-widget ul li a {
+ color: #878787;
+ text-transform: capitalize;
+}
+.subscribe-form {
+ position: relative;
+ overflow: hidden;
+}
+.subscribe-form input {
+ width: 100%;
+ padding: 14px 28px;
+ background: #2E2E2E;
+ border: 1px solid #2E2E2E;
+ color: #000000;
+}
+.subscribe-form button {
+   position: absolute;
+   right: 0;
+   background: #ff5e14;
+   padding: 13px 20px;
+   border: 1px solid #ff5e14;
+   top: 0;
+}
+.subscribe-form button i {
+ color: #000000;
+ font-size: 22px;
+ transform: rotate(-6deg);
+}
+.copyright-area{
+ background: #202020;
+ padding: 25px 0;
+}
+.copyright-text p {
+ margin: 0;
+ font-size: 14px;
+ color: #ffffff;
+}
+.copyright-text p a{
+ color: #ff5e14;
+}
+.footer-menu li {
+ display: inline-block;
+ margin-left: 20px;
+}
+.footer-menu li:hover a{
+ color: #ff5e14;
+}
+.footer-menu li a {
+ font-size: 14px;
+ color: #ffffff;
+}
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   flex-direction: column;
+   align-items: center
+}
+h1 {
+   color: #333;
+   margin-bottom: 20px;
+}
+.contact-info, .faq, .social-media {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   width: 100%;
+   max-width: 600px;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover, .faq:hover, .social-media:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.address {
+   margin-bottom: 10px;
+}
+
+.map {
+   width: 100%;
+   height: 300px;
+   border: none;
+   border-radius: 8px;
+}
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+input, textarea {
+   width: calc(100% - 20px);
+   margin-bottom: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+}
+button:hover {
+   background-color: #0056b3;
+}
+ul {
+   list-style-type:none; 
+   padding-left:0; 
+   margin: 0px;
+   padding: 0px;
+}
+.social-icons {
+   display: flex; 
+   justify-content: center; 
+}
+.social-icons img {
+   width: 40px; /* Размер иконок */
+   height: auto; /* Автоматическая высота */
+   margin-right: 10px; /* Отступ между иконками */
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 15px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+.office {
+   background-color: #f4f4f4;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 10px; /* Отступ между офисами */
+}
+
+.installation_center{
+   margin-left: 31%; /* Отступ слева для текста в третьем блоке */
+   max-width: 800px;
+   margin-top: 30px;
+}
+
+.mont{
+      width: 300px; /* Увеличенная ширина изображения продуктов для прямоугольной формы */
+      height: 300px; /* Уменьшенная высота изображения для прямоугольной формы */
+}
+
+/* Контейнер для галереи */
+.gallery-container {
+   display: flex; /* Использование flexbox для расположения изображений */
+   flex-wrap: wrap; /* Позволяет изображениям переноситься на новую строку */
+   justify-content: center; /* Центрирование содержимого по горизонтали */
+   margin-top: 25px;
+}
+.installation_center {
+   display: flex; /* Использование flexbox для расположения изображений */
+   flex-wrap: wrap; /* Позволяет изображениям переноситься на новую строку */
+   justify-content: center; /* Центрирование содержимого по горизонтали */
+   padding: 10px; /* Отступы вокруг галереи */
+}
+
+/* Стили для изображений в галерее */
+.gallery-container img {
+   margin: 10px; /* Отступы между изображениями */
+   width: calc(25% - 20px); /* Ширина изображений (уменьшена до 30%) */
+   cursor: pointer; /* Указатель мыши при наведении на изображение */
+   transition: transform 0.3s; /* Плавный переход при изменении размера изображения */
+   object-fit: cover;
+   width: 400px;
+   height: 300px;
+}
+.installation_center img {
+   margin: 10px; /* Отступы между изображениями */
+   width: calc(25% - 20px); /* Ширина изображений (уменьшена до 30%) */
+   cursor: pointer; /* Указатель мыши при наведении на изображение */
+   transition: transform 0.3s; /* Плавный переход при изменении размера изображения */
+}
+
+
+/* Эффект при наведении на изображение */
+.gallery-container img:hover {
+   transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Стили для модального окна */
+.modal {
+   display: none; /* Скрыто по умолчанию */
+   position: fixed; /* Фиксированное положение относительно окна браузера */
+   z-index: 1000; /* Высокий уровень наложения, чтобы быть поверх других элементов */
+   left: 0;
+   top: 0;
+   width: 100%; /* Полная ширина экрана */
+   height: 100%; /* Полная высота экрана */
+   overflow: auto; /* Прокрутка при необходимости */
+   background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+}
+
+/* Стили для увеличенного изображения в модальном окне */
+.modal-content {
+   margin: auto; /* Центрирование изображения в модальном окне */
+   display: block;
+   max-width: 80%; /* Максимальная ширина изображения в модальном окне */
+}
+
+/* Стили для подписи к изображению в модальном окне */
+#caption {
+   color: white; /* Цвет текста подписи */
+   text-align: center; /* Центрирование текста подписи */
+}
+
+.facade-block {
+   display: flex;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   margin-left: 30%; /* Отступ слева */
+   margin-top: 20px; /* Добавленный отступ сверху */
+}
+
+.facade-image img {
+   width: 100%;
+   height: auto;
+}
+
+.facade-details {
+   padding: 20px;
+   flex: 1;
+}
+
+h2 {
+   margin-top: 0;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+
+
+
+
+#more-info {
+   background-color: #ff8e00e8;
+   color: white;
+}
+
+#order {
+   background-color: #ff8e00e8;
+   color: white;
+}
+.ram {
+   padding: 10px 15px;
+   margin-right: 83%;
+   border: none;
+   border-radius: 5px;
+   background-color: #ff8e00e8;
+}
+.logo_center{
+   margin-left: 30%;
+   display: flex;
+   top: 0;
+}
+
+.right{
+   margin: 5%;
+}
+
+.second-container1,
+.third-container1,
+.fourth-container1,
+.fifth-container1 {
+    display: flex; /* Горизонтальное расположение элементов в новых блоках */
+    align-items: center; /* Центрирование по вертикали */
+    margin-top: 40px; /* Отступ сверху для новых блоков */
+}
+
+.second-text1,
+.third-text1 {
+    max-width: 400px; /* Ограничение ширины текста во втором и третьем блоках */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.second-text1 {
+    margin-right: 20px; /* Отступ справа для текста во втором блоке */
+}
+
+.third-text1 {
+    margin-left: 20px; /* Отступ слева для текста в третьем блоке */
+}
+/* Измененные размеры изображений продуктов с закругленными углами */
+.product-image1 {
+   width: 450px; /* Увеличенная ширина изображения продуктов для прямоугольной формы */
+   height: 300px; /* Уменьшенная высота изображения для прямоугольной формы */
+   object-fit: cover; /* Сохранение пропорций изображения при обрезке */
+}
+.center{
+   justify-content: center;
+   margin-left: 30%;
+}
+
+.center_1{
+   margin-left: auto;
+   margin-right: auto;
+   width: 550px;
+}
+/* Стили для шапки */
+.header {
+   background-color: #000000; /* Цвет фона шапки */
+   color: white; /* Цвет текста */
+   padding: 10px 0; /* Отступы внутри шапки */
+   text-align: center; /* Выравнивание текста по центру */
+    width: 100%; /* Ширина на всю ширину экрана */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Прикрепляем к верхней части страницы */
+    left: 0; /* Прикрепляем к левой части страницы */
+    z-index: 1000; /* Устанавливаем уровень наложения, чтобы шапка была выше других элементов */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для фона и тени */
+}
+.header.scrolled {
+    background-color: #ffffff; /* Цвет фона при прокрутке */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень под шапкой при прокрутке */
+}
+
+/* Остальные стили остаются без изменений... */
+
+/* Пример стилей для остального контента */
+.logo {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 20px; /* Отступ справа от логотипа */
+}
+
+/* Другие стили... */
+ 
+
+ 
+ .info {
+   
+    flex-direction: column; /* Упорядочивает элементы по вертикали */
+    align-items: center; /* Центрирует элементы внутри info */
+ }
+ 
+ .city {
+    font-size: 18px;
+ }
+ 
+ .phone {
+    font-size: 16px;
+ }
+ 
+ .menu {
+    list-style-type: none; /* Убирает маркеры списка */
+    padding: 0; /* Убирает внутренние отступы */
+    margin-top: 10px; /* Отступ сверху для разделения с номером телефона */
+ }
+ 
+ .menu li {
+    margin-left: 30px; /* Увеличиваем отступ между пунктами меню */
+ }
+ 
+ .menu li:first-child {
+    margin-left: 0; /* Убираем отступ для первого пункта меню */
+ }
+ 
+ .menu a {
+    text-decoration: none; /* Убирает подчеркивание у ссылок */
+    color: #ffffff; /* Цвет текста ссылок */
+ }
+ 
+ .menu a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+ }
+ 
+ /* Стили для слайдера */
+ .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Скрывает изображения, выходящие за пределы контейнера */
+ }
+ 
+ .slides {
+    display:flex; /* Располагает изображения в строку */
+    transition : transform .5s ease; /* Плавный переход при смене изображений */
+ }
+ 
+ .slide {
+    min-width :100%; /* Каждое изображение занимает всю ширину контейнера */
+    height :1200px; /* Задаем фиксированную высоту для изображений (в 4 раза больше) */
+    object-fit : cover; /* Обеспечивает правильное отображение изображения без искажений */
+ }
+ 
+ /* Стили для текста и кнопок в слайдере */
+ .slider-content {
+    position:absolute;
+    top :50%; /* Центрируем по вертикали */
+    left :50%; /* Центрируем по горизонтали */
+    transform :translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты для центрирования */
+    text-align:center; /* Центрируем текст внутри контейнера */
+    color:white; /* Цвет текста (можно изменить) */
+ }
+ 
+ .slider-content h2 {
+    font-size :48px; /* Увеличенный размер заголовка (можно изменить) */
+    text-shadow:1px 0px 0 #ff8e00e8;
+ }
+ 
+ .slider-content p {
+    font-size :24px; /* Увеличенный размер параграфа (можно изменить) */
+    text-shadow:1px 0px 0 #ff8e00e8;
+    margin-left: 80px;
+ }
+ 
+ /* Стили для кнопок */
+ .buttons {
+   margin-top: 20px;
+   display: flex;
+}
+
+button {
+   padding: 15px 125px;
+   margin-right: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #ff8e00e8;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   display:inline;
+    font-size: 25px;
+     margin-left: 38%;
+
+}
+
+ 
+ 
+ .buttons button:hover {
+    background-color :#ff8e00e8; /* Цвет фона при наведении на кнопку */
+ }
+ 
+ /* Стили для темносерого блока под слайдером */
+ .dark-section {
+    background-color:#000000; /* Темно-серый фон блока */
+    color:white; /* Цвет текста в блоке (белый) */
+    text-align:center; /* Центрируем текст внутри блока */
+    padding:40px 0; /* Отступы сверху и снизу блока (можно изменить) */
+ }
+ 
+ .dark-section h2 {
+    font-size :36px; /* Размер заголовка в темносером блоке (можно изменить) */
+    margin-bottom :10px; /* Отступ снизу заголовка (можно изменить) */
+ }
+ .dark {
+   font-size :36px; /* Размер заголовка в темносером блоке (можно изменить) */
+   margin-bottom :120px; /* Отступ снизу заголовка (можно изменить) */
+}
+
+ 
+ /* Стили для квадратного слайдера и текста справа от него */
+ 
+ .square-slider-container {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-top :40px;
+ }
+ 
+ .square-slider {
+      position :relative;
+      width :400px;
+      height :400px;
+      overflow:hidden;
+ }
+ 
+ .square-slides {
+      display:flex;
+      transition :transform .5s ease;
+ }
+ 
+ .square-slide {
+      min-width :100%;
+      height :100%;
+      object-fit :cover;
+ }
+ 
+ /* Индикаторы для квадратного слайдера */
+ 
+ .square-indicators {
+      text-align:center;
+ }
+ 
+ .square-indicator {
+      display:inline-block;
+      width :12px;
+      height :12px;
+      border-radius :50%;
+      background-color :#bbb;
+      margin-right :5px;
+      cursor:pointer;
+ }
+ 
+ .square-indicator.active {
+      background-color :#717171;
+ }
+ 
+ /* Стили для текста справа от квадратного слайдера */
+ 
+ .right-text {
+      margin-left :20px;
+ }
+ 
+ .right-text h2 {
+      font-size :24px;
+ }
+ 
+ .right-text p {
+      font-size :18px;
+ }
+ 
+ /* Новый текст под квадратным слайдером */
+ 
+ .unique-techniques-section {
+      text-align:center; 
+      margin-top :40px;
+ }
+ .unique-techniques-section h2 {
+      font-size :28px; 
+      color:#333333 ; 
+      margin-bottom :10px ; 
+      max-width: 1200px;
+      margin-left: 15%;
+ }
+ 
+ /* Стили для картинок с текстом справа от них */
+ 
+
+ 
+ 
+ /* Новый текст под картинками */
+ 
+ .main-directions-section {
+       text-align:center ; 
+       margin-top:40px ; 
+ }
+ .main-directions-section h2 { 
+       font-size:28px ; 
+       color:#000000 ; 
+ }
+ 
+ /* Стили для картинки по центру */
+ 
+ .center-image-section { 
+       text-align:center ; 
+       margin-top:40px ; 
+ }
+ .center-image-section img { 
+       max-width:100%; 
+       height:auto ; 
+       border-radius:10px ;
+       object-fit: cover;
+       height: 600px; 
+       width: 1200px;
+ }
+ 
+ /* Стили для нижнего блока с текстом и кнопкой */
+ 
+ .bottom-section { 
+       text-align:center ; 
+       margin-top:20px ; 
+ }
+ .bottom-section button { 
+       padding:10px 15px ; 
+       background-color:#ff8e00e8 ; 
+       color:white ; 
+       border:none ;
+       border-radius:5px ;
+       cursor:pointer ;
+ }
+ .bottom-section button:hover { 
+       background-color:#ff8e00e8 ; 
+ }
+ 
+ /* Стили для секции "Наши проекты" */
+ 
+ .projects-section { 
+       text-align:center ;
+       margin-top:40px ;
+ }
+ .projects-container { 
+       display:flex ;
+       justify-content:center ;
+ }
+ .project-image { 
+       width:200px ;
+       height:auto ;
+ }
+ .project-images-right { 
+       display:flex ;
+       flex-direction:column ;
+ }
+ .project-images-right img {  
+       width:200px ;
+       height:auto ;
+ }
+/* Стили для подвала */
+
+
+
+.hidden {
+    display: none;
+    
+}
+
+.visible {
+    display: block;
+}
+
+/* Стили для шапки */
+
+
+/* Эффект прокрутки для шапки */
+.header.scrolled {
+   background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон при прокрутке */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень под шапкой при прокрутке */
+}
+
+/* Плавные переходы для кнопок */
+.buttons button {
+   padding: 10px 20px; /* Отступы внутри кнопок */
+   margin-right: 10px; /* Отступ между кнопками */
+   border-radius: 5px; /* Закругление углов кнопок */
+   border: none; /* Убираем рамку у кнопок */
+   background-color: #ff8e00e8; /* Цвет фона кнопок */
+   color: white; /* Цвет текста на кнопках */
+   cursor: pointer; /* Указатель при наведении на кнопку */
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для фона и трансформации */
+}
+
+.buttons button:hover {
+   background-color: #ff8e00e8; /* Цвет фона при наведении на кнопку */
+   transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Анимация появления элементов при загрузке страницы */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Применяем анимацию к основным секциям сайта */
+.slider,
+.dark-section,
+.square-slider-container,
+.unique-techniques-section,
+.images-with-text-container,
+.main-directions-section,
+.center-image-section,
+.bottom-section,
+.projects-section {
+   animation: fadeIn 0.5s ease forwards;
+}
+
+/* Стили для картинок с текстом справа от них */
+
+.images-with-text-container {
+    display:flex;
+    justify-content:center;
+
+}
+
+.image-text-block {
+    display:flex;
+    align-items:center;
+    margin: 5%; 
+    margin-top: 3%;
+    transition: transform 0.3s ease; /* Плавный переход для увеличения картинки при наведении */
+} 
+
+.image-text-block:hover { 
+    transform: scale(1.05); /* Увеличение картинки при наведении */ 
+}
+
+.image-text-block img { 
+    width: 300px; 
+    height:300px; 
+    object-fit:cover ; 
+    border-radius:10px ; 
+} 
+
+.image-text-block p { 
+    margin-left:20px ; 
+    font-size:18px ; 
+}
+
+/* Стили для секции "Наши проекты" */
+
+.projects-section { 
+     text-align:center ;
+     margin-top:40px ;
+}
+.projects-container { 
+     display:flex ;
+     justify-content:center ;
+}
+.project-image { 
+     width:200px ;
+     height:auto ;
+}
+.project-images-right { 
+     display:flex ;
+     flex-direction:column ;
+}
+.project-images-right img {  
+     width:200px ;
+     height:auto ;
+}
+
+/* Стили для нижнего блока с текстом и кнопкой */
+
+.bottom-section { 
+     text-align:center ; 
+     margin-top:20px ; 
+}
+.bottom-section p { 
+     font-size:18px ; 
+     margin-bottom:10px ; 
+}
+.bottom-section button { 
+     padding:10px 15px ; 
+     background-color:#ff8e00e8 ; 
+     color:white ; 
+     border:none ;
+     border-radius:5px ;
+     cursor:pointer ;
+     transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для фона и трансформации */ 
+}
+.bottom-section button:hover { 
+     background-color:#e65f2a ; 
+     transform: scale(1.05); /* Увеличение кнопки при наведении */ 
+}
+
+
+
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1001; /* Чтобы модальное окно было выше других элементов */
+}
+
+.modal-content {
+   position: relative;
+}
+
+.modal-content img {
+   max-width: 90%;
+   max-height: 90%;
+}
+
+.close-button {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   color: white;
+   font-size: 30px;
+   cursor: pointer;
+}
+
+
+.logo img {
+   max-width: 150px; /* Максимальная ширина логотипа */
+   height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.container {
+   margin: 20px;
+   display: flex;
+   justify-content: center; /* Центрирует все элементы по горизонтали */
+   align-items: center; /* Выравнивает элементы по вертикали */
+}
+
+#menu {
+   margin-top: 10px;
+   background-color: #f0f0f0;
+   border: 1px solid #ccc;
+   padding: 10px;
+}
+
+.visible {
+   display: block;
+}
+.tagline {
+   background-color: #f0f0f0; /* Цвет фона */
+   padding: 20px; /* Отступы */
+   text-align: center; /* Выравнивание текста по центру */
+   font-size: 18px; /* Размер шрифта */
+   line-height: 1.5; /* Междустрочный интервал */
+}
+@media (max-width: 1000px) {
+.unique-techniques-section h2 {
+   font-size :11px; 
+   color:#333333 ; 
+   margin-bottom :10px ; 
+   max-width: 1200px;
+   margin: 3%;
+}
+}
+
+@media (max-width: 450px) {
+
+   .footer-section {
+   background: #cecece33;
+   position: relative;
+  }
+
+  .caption {
+   margin-top: 1px;
+   font-size: 10px;
+   color: #333;
+}
+   .gallery {
+width: 90px;
+height: 60px;
+   width: 100%;
+   margin-top: 50px;
+   margin-left: 0;
+   object-fit: cover;
+   margin-bottom: 25%;
+}
+  .footer-cta {
+   border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+  
+   font-size: 30px;
+   float: left;
+   margin-top: 8px;
+  }
+  img {
+ 
+   height: 60px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+  .cta-text {
+   padding-left: 13px;
+   display: inline-block;
+  }
+  .cta-text h4 {
+   color: #000000;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 2px;
+  }
+  .cta-text span {
+   color: #000000;
+   font-size: 13px;
+  }
+  .footer-content {
+   position: relative;
+   z-index: 2;
+  }
+  .footer-pattern img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 330px;
+   background-size: cover;
+   background-position: 100% 100%;
+  }
+  .footer-logo {
+   margin-bottom: 30px;
+  }
+  .footer-logo img {
+    
+  }
+  .footer-text p {
+   margin-bottom: 14px;
+   font-size: 14px;
+       color: #000000;
+   line-height: 28px;
+  }
+  .footer-social-icon span {
+   color: #000000;
+   display: block;
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   margin-bottom: 20px;
+  }
+  .galleryy {
+margin-bottom: 0;
+   width: 100%;
+   margin-top: 20px;
+   margin-left: 0;
+}
+  .footer-social-icon a {
+   color:  #000000;
+   font-size: 16px;
+   margin-right: 15px;
+  }
+  .footer-social-icon i {
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   line-height: 38px;
+   border-radius: 50%;
+  }
+  .footer-widget-heading h3 {
+   color: #000000;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   position: relative;
+  }
+  .footer-widget-heading h3::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -15px;
+   height: 2px;
+   width: 50px;  
+  }
+  .footer-widget ul li {
+   display: inline-block;
+   float: left;
+   width: 50%;
+   margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+   color: #ff5e14;
+  }
+  .footer-widget ul li a {
+   color: #878787;
+   text-transform: capitalize;
+  }
+  .subscribe-form {
+   position: relative;
+   overflow: hidden;
+  }
+  .subscribe-form input {
+   width: 100%;
+   padding: 14px 28px;
+   background: #2E2E2E;
+   border: 1px solid #2E2E2E;
+   color: #000000;
+  }
+  .subscribe-form button {
+     position: absolute;
+     right: 0;
+     background: #ff5e14;
+     padding: 13px 20px;
+     border: 1px solid #ff5e14;
+     top: 0;
+  }
+  .subscribe-form button i {
+   color: #000000;
+   font-size: 22px;
+   transform: rotate(-6deg);
+  }
+  .copyright-area{
+   background: #202020;
+   padding: 25px 0;
+  }
+  .copyright-text p {
+   margin: 0;
+   font-size: 14px;
+   color: #ffffff;
+  }
+  .copyright-text p a{
+   color: #ff5e14;
+  }
+  .footer-menu li {
+   display: inline-block;
+   margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+   color: #ff5e14;
+  }
+  .footer-menu li a {
+   font-size: 14px;
+   color: #ffffff;
+  }
+  .catalog_m{
+   margin-right: 20%;
+  }
+  body {
+     align-items: center;
+     font-family: none;
+  }
+  h1 {
+   font-size: 20px;
+     color: #333;
+     margin-bottom: 10px;
+  }
+  .contact-info, .faq, .social-media {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     width: 90%;
+     max-width: 340px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .contact-info:hover, .faq:hover, .social-media:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .address {
+     margin-bottom: 10px;
+  }
+  
+  .map {
+     width: 100%;
+     height: 300px;
+     border: none;
+     border-radius: 8px;
+  }
+  form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  input, textarea {
+     width: calc(100% - 20px);
+     margin-bottom: 10px;
+     padding: 10px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+  }
+  button:hover {
+     background-color: #0056b3;
+  }
+  ul {
+     list-style-type:none; 
+     padding-left:0; 
+     margin: 0px;
+     padding: 0px;
+  }
+  .social-icons {
+     display: flex; 
+     justify-content: center; 
+  }
+  .social-icons img {
+     width: 40px; /* Размер иконок */
+     height: auto; /* Автоматическая высота */
+     margin-right: 10px; /* Отступ между иконками */
+  }
+  
+  nav ul {
+     list-style-type: none;
+     padding: 0;
+  }
+  
+  nav ul li {
+     display: inline;
+     margin-right: 10px;
+  }
+  
+  nav ul li a {
+     color: white;
+     text-decoration: none;
+  }
+  
+  .office {
+     background-color: #f4f4f4;
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 10px; /* Отступ между офисами */
+  }
+  
+  .installation_center{
+     margin-left: 31%; /* Отступ слева для текста в третьем блоке */
+     max-width: 800px;
+     margin-top: 30px;
+  }
+  
+  .mont{
+        width: 300px; /* Увеличенная ширина изображения продуктов для прямоугольной формы */
+        height: 300px; /* Уменьшенная высота изображения для прямоугольной формы */
+  }
+  
+  /* Контейнер для галереи */
+  .gallery-container {
+     display: flex; /* Использование flexbox для расположения изображений */
+     flex-wrap: wrap; /* Позволяет изображениям переноситься на новую строку */
+     justify-content: center; /* Центрирование содержимого по горизонтали */
+  }
+  
+  /* Стили для изображений в галерее */
+  .gallery-container img {
+     width: 170px;
+     height: 170px;
+  }
+
+  
+  /* Эффект при наведении на изображение */
+  .gallery-container img:hover {
+     transform: scale(1.05); /* Увеличение изображения при наведении */
+  }
+  
+  /* Стили для модального окна */
+  .modal {
+     display: none; /* Скрыто по умолчанию */
+     position: fixed; /* Фиксированное положение относительно окна браузера */
+     z-index: 1000; /* Высокий уровень наложения, чтобы быть поверх других элементов */
+     left: 0;
+     top: 0;
+     width: 100%; /* Полная ширина экрана */
+     height: 100%; /* Полная высота экрана */
+     overflow: auto; /* Прокрутка при необходимости */
+     background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+  }
+  
+  /* Стили для увеличенного изображения в модальном окне */
+  .modal-content {
+     margin: auto; /* Центрирование изображения в модальном окне */
+     display: block;
+     max-width: 80%; /* Максимальная ширина изображения в модальном окне */
+  }
+  
+  /* Стили для подписи к изображению в модальном окне */
+  #caption {
+     color: white; /* Цвет текста подписи */
+     text-align: center; /* Центрирование текста подписи */
+  }
+  
+  
+  
+  .facade-block {
+
+     background-color: white;
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+     margin-left: 0%; /* Отступ слева */
+     margin-top: 10px; /* Добавленный отступ сверху */
+  }
+  
+  .facade-image img {
+     width: 200px;
+     height: 100px;
+     height: max-content;
+  }
+  
+  .facade-details {
+     padding: 10px;
+     
+  }
+  
+  h2 {
+     margin-top: 0;
+     font-size: 25px;
+  }
+  
+  ul {
+     list-style-type: none;
+     padding: 0;
+  }
+  #more-info {
+  margin: 3px;
+  }
+  
+  #order {
+     background-color: #e65f2a;
+     color: white;
+  }
+  .ram {
+     padding: 10px 15px;
+     margin-right: 0%;
+     border: none;
+     border-radius: 5px;
+     background-color: #e65f2a;
+  }
+  .logo_center{
+     margin-left: 30%;
+     display: flex;
+     top: 0;
+  }
+  .logo img {
+   max-width: 90px; /* Максимальная ширина логотипа */
+   height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+  .right{
+     margin: 5%;
+  }
+  
+  .second-container1,
+  .third-container1,
+  .fourth-container1,
+  .fifth-container1 {
+      display: flex; /* Горизонтальное расположение элементов в новых блоках */
+      align-items: center; /* Центрирование по вертикали */
+      margin-top: 10px; /* Отступ сверху для новых блоков */
+      left: 20%;
+  }
+  
+  .second-text1,
+  .third-text1 {
+      max-width: 400px; /* Ограничение ширины текста во втором и третьем блоках */
+      text-align: left; /* Выравнивание текста по левому краю */
+  }
+  
+  .second-text1 {
+      margin-right: 20px; /* Отступ справа для текста во втором блоке */
+  }
+  
+  .third-text1 {
+      margin-left: 20px; /* Отступ слева для текста в третьем блоке */
+  }
+  /* Измененные размеры изображений продуктов с закругленными углами */
+  .product-image1 {
+     width: 300px; /* Увеличенная ширина изображения продуктов для прямоугольной формы */
+     height: 200px; /* Уменьшенная высота изображения для прямоугольной формы */
+     object-fit: cover; /* Сохранение пропорций изображения при обрезке */
+  }
+  .center{
+     justify-content: center;
+     margin-left: 30%;
+  }
+  
+  .center_1{
+     justify-content: center;
+     margin-left: 0%;
+  }
+  /* Стили для шапки */
+  .header {
+     background-color: #000000; /* Цвет фона шапки */
+     color: white; /* Цвет текста */
+     padding: 10px 0; /* Отступы внутри шапки */
+     text-align: center; /* Выравнивание текста по центру */
+      width: 100%; /* Ширина на всю ширину экрана */
+      position: fixed; /* Фиксированное позиционирование */
+      top: 0; /* Прикрепляем к верхней части страницы */
+      left: 0; /* Прикрепляем к левой части страницы */
+      z-index: 1000; /* Устанавливаем уровень наложения, чтобы шапка была выше других элементов */
+      transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для фона и тени */
+  }
+  .header.scrolled {
+      background-color: #ffffff; /* Цвет фона при прокрутке */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень под шапкой при прокрутке */
+  }
+  
+  /* Остальные стили остаются без изменений... */
+  
+  /* Пример стилей для остального контента */
+  .logo {
+      font-size: 10px;
+      font-weight: bold;
+      margin-right: 20px; /* Отступ справа от логотипа */
+  }
+  
+  /* Другие стили... */
+   
+  
+   
+   .info {
+      flex-direction: column; /* Упорядочивает элементы по вертикали */
+      align-items: center; /* Центрирует элементы внутри info */
+   }
+   
+   .city {
+      font-size: 18px;
+   }
+   
+   .phone {
+      font-size: 16px;
+   }
+   
+   .menu {
+      list-style-type: none; /* Убирает маркеры списка */
+      padding: 0; /* Убирает внутренние отступы */
+      margin-top: 10px; /* Отступ сверху для разделения с номером телефона */
+   }
+   
+   .menu ul {
+      display: flex; /* Располагает пункты меню в строку */
+      margin-left: 25px;
+   }
+   
+   .menu li {
+      margin-left: 3px; /* Увеличиваем отступ между пунктами меню */
+   }
+   
+   .menu li:first-child {
+      margin-left: 0; /* Убираем отступ для первого пункта меню */
+   }
+   
+   .menu a {
+      text-decoration: none; /* Убирает подчеркивание у ссылок */
+      color: #ffffff; /* Цвет текста ссылок */
+      font-size: 12px;
+   }
+   
+   .menu a:hover {
+      text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+   }
+   
+   /* Стили для слайдера */
+   .slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden; /* Скрывает изображения, выходящие за пределы контейнера */
+   }
+   
+   .slides {
+      display:flex; /* Располагает изображения в строку */
+      transition : transform .5s ease; /* Плавный переход при смене изображений */
+   }
+   
+   .slide { 
+      height :700px; /* Задаем фиксированную высоту для изображений (в 4 раза больше) */
+   }
+   
+   /* Стили для текста и кнопок в слайдере */
+   .slider-content {
+      position:absolute;
+      top :50%; /* Центрируем по вертикали */
+      left :50%; /* Центрируем по горизонтали */
+      transform :translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты для центрирования */
+      text-align:center; /* Центрируем текст внутри контейнера */
+      color:white; /* Цвет текста (можно изменить) */
+      
+   }
+   
+   .slider-content h2 {
+      font-size :48px; /* Увеличенный размер заголовка (можно изменить) */
+   }
+   
+   .slider-content p {
+      font-size :24px; /* Увеличенный размер параграфа (можно изменить) */
+      margin-left: 0;
+   }
+   
+   /* Стили для кнопок */
+   .buttons {
+     margin-top: 20px;
+     display: flex;
+  }
+  
+  button {
+     padding: 10px 15px;
+     margin-right: 10px;
+     border: none;
+     border-radius: 5px;
+     background-color: #ff8e00e8;
+     color: white;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin-left: 37%;
+  }
+   
+   .buttons button {
+      padding :20px 40px; /* Отступы внутри кнопок */
+      margin-right :10px; /* Отступ между кнопками */
+      border-radius :5px; /* Закругление углов кнопок */
+      border:none; /* Убираем рамку у кнопок */
+      background-color :#ff8e00e8; /* Цвет фона кнопок */
+      color:white; /* Цвет текста на кнопках */
+      cursor:pointer; /* Указатель при наведении на кнопку */
+   }
+   
+   .buttons button:hover {
+      background-color :#ec5114; /* Цвет фона при наведении на кнопку */
+   }
+   
+   /* Стили для темносерого блока под слайдером */
+   .dark-section {
+      background-color:#000000; /* Темно-серый фон блока */
+      color:white; /* Цвет текста в блоке (белый) */
+      text-align:center; /* Центрируем текст внутри блока */
+      padding:20px 0; /* Отступы сверху и снизу блока (можно изменить) */
+   }
+   
+   .dark-section h2 {
+      font-size :24px; /* Размер заголовка в темносером блоке (можно изменить) */
+      margin-bottom :10px; /* Отступ снизу заголовка (можно изменить) */
+   }
+   
+   /* Стили для квадратного слайдера и текста справа от него */
+   
+   .square-slider-container {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-top :10px;
+   }
+   
+   .square-slider {
+        position :relative;
+        width :400px;
+        height :400px;
+        overflow:hidden;
+   }
+   
+   .square-slides {
+        display:flex;
+        transition :transform .5s ease;
+   }
+   
+   .square-slide {
+        min-width :100%;
+        height :100%;
+        object-fit :cover;
+        margin-top: 120px;
+   }
+   
+   /* Индикаторы для квадратного слайдера */
+   
+   .square-indicators {
+        text-align:center;
+   }
+   
+   .square-indicator {
+        display:inline-block;
+        width :12px;
+        height :12px;
+        border-radius :50%;
+        background-color :#bbb;
+        margin-right :5px;
+        cursor:pointer;
+   }
+   
+   .square-indicator.active {
+        background-color :#717171;
+   }
+   
+   /* Стили для текста справа от квадратного слайдера */
+   
+   .right-text {
+        margin-left :20px;
+   }
+   
+   .right-text h2 {
+        font-size :24px;
+        margin: 0;
+   }
+   
+   .right-text p {
+        font-size :18px;
+        margin: 0;
+   }
+   
+   /* Новый текст под квадратным слайдером */
+   
+   .unique-techniques-section {
+        text-align:center; 
+        margin-top :40px;
+   }
+   .unique-techniques-section h2 {
+        font-size :11px; 
+        color:#333333 ; 
+        margin-bottom :10px ; 
+        max-width: 1800px;
+        margin: 3%;
+   }
+   
+   /* Стили для картинок с текстом справа от них */
+   
+   .images-with-text-container {
+        display:flex;
+        justify-content:center;
+   }
+   
+   /* Новый текст под картинками */
+   
+   .main-directions-section {
+         text-align:center ; 
+         margin-top:40px ; 
+   }
+   .main-directions-section h2 { 
+         font-size:28px ; 
+         color:#000000 ; 
+   }
+   
+   /* Стили для картинки по центру */
+   
+   .center-image-section { 
+         text-align:center ; 
+         margin-top:40px ; 
+   }
+   .center-image-section img { 
+         max-width:100%; 
+         width: 370px;
+         height: 200px;
+         border-radius:10px ; 
+   }
+   
+   /* Стили для нижнего блока с текстом и кнопкой */
+   
+   .bottom-section { 
+         text-align:center ; 
+         margin-top:20px ; 
+   }
+   .bottom-section button { 
+         padding:10px 15px ; 
+         background-color:#e65f2a ; 
+         color:white ; 
+         border:none ;
+         border-radius:5px ;
+         cursor:pointer ;
+   }
+   .bottom-section button:hover { 
+         background-color:#e65f2a ; 
+   }
+   
+   /* Стили для секции "Наши проекты" */
+   
+   .projects-section { 
+         text-align:center ;
+         margin-top:40px ;
+   }
+   .projects-container { 
+         display:flex ;
+         justify-content:center ;
+   }
+   .project-image { 
+         width:200px ;
+         height:auto ;
+   }
+   .project-images-right { 
+         display:flex ;
+         flex-direction:column ;
+   }
+   .project-images-right img {  
+         width:200px ;
+         height:auto ;
+   }
+  /* Стили для подвала */
+  
+  
+  
+  .hidden {
+      display: none;
+      
+  }
+  
+  .visible {
+      display: block;
+  }
+  
+  /* Стили для шапки */
+  
+  
+  /* Эффект прокрутки для шапки */
+  .header.scrolled {
+     background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон при прокрутке */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень под шапкой при прокрутке */
+  }
+  
+  /* Плавные переходы для кнопок */
+  .buttons button {
+     padding: 10px 20px; /* Отступы внутри кнопок */
+     margin-right: 10px; /* Отступ между кнопками */
+     border-radius: 5px; /* Закругление углов кнопок */
+     border: none; /* Убираем рамку у кнопок */
+     background-color: #e65f2a; /* Цвет фона кнопок */
+     color: white; /* Цвет текста на кнопках */
+     cursor: pointer; /* Указатель при наведении на кнопку */
+     transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для фона и трансформации */
+  }
+  
+  .buttons button:hover {
+     background-color: #e65f2a; /* Цвет фона при наведении на кнопку */
+     transform: scale(1.05); /* Увеличение кнопки при наведении */
+  }
+  
+  /* Анимация появления элементов при загрузке страницы */
+  @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+  }
+  
+  /* Применяем анимацию к основным секциям сайта */
+  .slider,
+  .dark-section,
+  .square-slider-container,
+  .unique-techniques-section,
+  .images-with-text-container,
+  .main-directions-section,
+  .center-image-section,
+  .bottom-section,
+  .projects-section {
+     animation: fadeIn 0.5s ease forwards;
+  }
+  
+  /* Стили для картинок с текстом справа от них */
+  
+
+  
+  .image-text-block {
+      margin-right: 0px;
+  } 
+  
+  .image-text-block:hover { 
+      transform: scale(1.05); /* Увеличение картинки при наведении */ 
+  }
+  
+  .image-text-block img { 
+      width:100px; 
+      height:100px; 
+      object-fit:cover ; 
+      border-radius:10px ;
+      margin: 0px; 
+      margin-top: 0;
+      
+  } 
+  
+  .image-text-block p { 
+      margin-left:0px ; 
+      font-size:15px ; 
+  }
+  
+  /* Стили для секции "Наши проекты" */
+  
+  .projects-section { 
+       text-align:center ;
+       margin-top:40px ;
+  }
+  .projects-container { 
+       display:flex ;
+       justify-content:center ;
+  }
+  .project-image { 
+       width:200px ;
+       height:auto ;
+  }
+  .project-images-right { 
+       display:flex ;
+       flex-direction:column ;
+  }
+  .project-images-right img {  
+       width:200px ;
+       height:auto ;
+  }
+  
+  /* Стили для нижнего блока с текстом и кнопкой */
+  
+  .bottom-section { 
+       text-align:center ; 
+       margin-top:20px ; 
+  }
+  .bottom-section p { 
+       font-size:19px ;    
+  }
+  .bottom-section button { 
+       padding:10px 15px ; 
+       background-color:#e65f2a ; 
+       color:white ; 
+       border:none ;
+       border-radius:5px ;
+       cursor:pointer ;
+       transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход для фона и трансформации */ 
+  }
+  .bottom-section button:hover { 
+       background-color:#e65f2a ; 
+       transform: scale(1.05); /* Увеличение кнопки при наведении */ 
+  }
+  
+  
+  
+  .modal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 1001; /* Чтобы модальное окно было выше других элементов */
+  }
+  
+  .modal-content {
+     position: relative;
+  }
+  
+  .modal-content img {
+     max-width: 90%;
+     max-height: 90%;
+  }
+  
+  .close-button {
+     position: absolute;
+     top: 10px;
+     right: 20px;
+     color: white;
+     font-size: 30px;
+     cursor: pointer;
+  }
+  
+  
+  
+  
+  .container {
+     margin: 5px;
+     display: flex;
+     justify-content: left;
+     align-items: center; /* Выравнивает элементы по вертикали */
+  }
+  
+  #menu {
+     margin-top: 10px;
+     background-color: #f0f0f0;
+     border: 1px solid #ccc;
+     padding: 10px;
+  }
+  
+  .visible {
+     display: block;
+  }
+  .tagline {
+     background-color: #f0f0f0; /* Цвет фона */
+     padding: 20px; /* Отступы */
+     text-align: center; /* Выравнивание текста по центру */
+     font-size: 18px; /* Размер шрифта */
+     line-height: 1.5; /* Междустрочный интервал */
+  }
+}

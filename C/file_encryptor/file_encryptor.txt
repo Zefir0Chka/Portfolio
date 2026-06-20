@@ -1,0 +1,3 @@
+gcc file_encryptor.c -o encryptor
+
+./encryptor

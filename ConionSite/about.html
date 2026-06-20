@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта и слайдер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imaiges/logo.png" alt="Логотип" />
+            </div>
+            <div class="info">
+                <div class="city">Санкт-Петербург</div>
+                <div class="phone">Телефон: +7-921-410-41-33</div>
+            </div>
+        </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="gallery.html">Фотогалерея</a></li>
+                        <li><a href="installation.html">Монтаж</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+    </header>
+
+    <!-- Слайдер -->
+    <div class="slider">
+        <div class="slides">
+            <img src="imaiges/main-slide4.jpg" alt="Картинка 1" class="slide active">
+        </div>
+
+        <!-- Контейнер для текста и кнопок -->
+        <div class="slider-content">
+            <h2>Давайте познакомимся ближе</h2>
+        </div>
+
+        <!-- Индикаторы -->
+        <div class="indicators">
+            <span class="indicator active" onclick="currentSlide(0)"></span>
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+            <span class="indicator" onclick="currentSlide(4)"></span>
+            <span class="indicator" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <!-- Темносерый блок под слайдером -->
+    <div class="dark-section">
+        <h2>Фиброцементные панели каталог</h2>
+    </div>
+
+ 
+    <!-- Новый текст под квадратным слайдером -->
+    <div class='unique-techniques-section'>
+        <h1>Уникальные подсистемы</h1>
+        <h2>Фасадные панели «Каньон» крепятся методом сухого монтажа на деревянную обрешетку или металлические подсистемы.
+ Эти подсистемы можно монтировать на самые разнообразные поверхности и они необязательно должны быть ровными. 
+ Новые металлические подсистемы практичны, экономичны и просты в использовании. 
+ С их помощью монтаж панелей станет еще более быстрым и легким.
+  Это новейшая разработка на рынке металлических подсистем –
+   в будущем она позволит монтировать фасадные панели на зданиях высотой до 75 м! </h2>
+    
+    </div>
+
+    <!-- Новый текст под картинками -->
+    <div class='main-directions-section'>
+        <h2>Демонстрация наших работ</h2>
+    </div>
+
+    <!-- Картинка по центру под основными направлениями -->
+    <div class='center-image-section'>
+        <img src='imaiges/instllation_1.jpg' alt='Основное направление' />
+    </div>
+
+
+        <!-- Кнопка "Смотреть" -->
+        &nbsp;<!-- Пробел для разделения -->
+        <button onclick='location.href="#catalog"' style='margin-top: 10px; font-size: 20px;'>Смотреть</button> 
+    </div>
+
+     <!-- Новый текст под картинками -->
+     <div class='main-directions-section'>
+        <h2>Демонстрация наших работ</h2>
+    </div>
+
+    <!-- Картинка по центру под основными направлениями -->
+    <div class='center-image-section'>
+        <img src='imaiges/home_2.jpg' alt='Основное направление' />
+    </div>
+
+
+
+ <!-- Кнопка "Смотреть" -->
+ &nbsp;<!-- Пробел для разделения -->
+ <button onclick='location.href="#catalog"' style='margin-top: 10px; font-size: 20px;'>Смотреть</button> 
+</div>
+     <!-- Новый текст под картинками -->
+     <div class='main-directions-section'>
+        <h2>Склад в Санкт-Петербурге</h2>
+    </div>
+
+    <!-- Картинка по центру под основными направлениями -->
+    <div class='center-image-section'>
+        <img src='imaiges/proizvoition_2.jpg' alt='Основное направление' />
+    </div>
+
+   
+
+    <!-- Кнопка "Смотреть" -->
+    &nbsp;<!-- Пробел для разделения -->
+    <button onclick='location.href="#catalog"' style='margin-top: 10px; font-size: 20px;'>Смотреть</button> 
+</div>
+
+    <!-- Новый блок "Наши проекты" с фотографиями -->
+    <div class='projects-section'>
+        <h2>Наши проекты</h2>
+
+        <!-- Контейнер для фотографий -->
+        <div class="gallery-container">
+            <img src="imaiges/home_1.jpg" alt="Готовый дом 1" onclick="openModal(this)">
+            <img src="imaiges/home_2.jpg" alt="Готовый дом 2" onclick="openModal(this)">
+        </div>
+        <div class="dark-section">
+            <h2>Фиброцементные панели каталог</h2>
+        </div>
+    </body>
+    </html>
+ 
+      <!-- Подвал сайта -->
+      <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Телефон</h4>
+                                <span>+7-921-410-41-33</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Почта</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="imaiges/logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Каньон - один из лидеров в области производства фасадных решений в России.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Соц-сети</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Другие страницы</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="catalog.html">Каталог</a></li>
+                                <li><a href="gallery.html">Галлерея</a></li>
+                                <li><a href="installation.html">Монтаж</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                           
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- Подключение скрипта -->
+    <script src = 'script.js' > 

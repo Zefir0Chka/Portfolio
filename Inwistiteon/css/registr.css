@@ -1,0 +1,759 @@
+/* Премиальный registr.css — черный, красный и бордовый */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a0000, #330000);
+    background-size: 400% 400%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    animation: gradientShift 15s ease infinite;
+}
+
+/* Анимация переливающегося градиента */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Блики и частицы для фона */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
+    animation: sparkle 5s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* Контейнер формы */
+.registr-container {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Анимация плавающего эффекта */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Переливающийся градиент для контейнера */
+.registr-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #ff0000, #800000, #330000);
+    background-size: 200% 200%;
+    animation: rotateGradient 10s linear infinite;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+@keyframes rotateGradient {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Заголовок формы */
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff0000, #800000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(128, 0, 0, 0.8), 0 0 40px rgba(128, 0, 0, 0.6), 0 0 60px rgba(128, 0, 0, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+}
+
+/* Поля ввода */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 24px); /* Учитываем padding */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 12px; /* Более округлые углы */
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px); /* Стеклянный эффект */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    position: relative;
+    cursor: text;
+}
+
+/* Эффекты при наведении */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    border-color: rgba(255, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Эффекты при фокусе */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Эффект градиента для полей ввода */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.1), rgba(128, 0, 0, 0.1));
+}
+
+/* Анимация градиента при наведении */
+@keyframes gradientHover {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.2), rgba(128, 0, 0, 0.2));
+    background-size: 200% 200%;
+    animation: gradientHover 2s ease infinite;
+}
+
+/* Плейсхолдер */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Анимация появления текста */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    animation: fadeInText 0.3s ease-in-out;
+}
+/* Контейнер для пароля */
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Иконка переключения видимости пароля */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #800000;
+}
+
+/* Кнопка отправки формы */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff0000, #800000);
+    background-size: 200% 200%;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: gradientShift 5s ease infinite;
+}
+
+button[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+}
+
+button[type="submit"]:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+}
+
+/* Текст и ссылки */
+p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #800000;
+    text-decoration: underline;
+}
+
+/* Эффекты при наведении */
+#secret-question:hover {
+    border-color: rgba(255, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
+#secret-question:hover::after {
+    color: rgba(255, 0, 0, 0.8);
+}
+
+/* Эффекты при фокусе */
+#secret-question:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Кнопки социальных сетей */
+.social-login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Увеличиваем расстояние между кнопками */
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px; /* Увеличиваем отступы для более крупного вида */
+    border: none;
+    border-radius: 12px; /* Более округлые углы */
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Более выраженная тень */
+    animation: pulseIcon 3s infinite alternate;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    backdrop-filter: blur(10px); /* Размытие для стеклянного эффекта */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая граница */
+}
+
+/* Анимация пульсации для кнопок */
+@keyframes pulseIcon {
+    0% {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 0, 0, 0.5);
+    }
+}
+
+/* Эффект при наведении */
+.social-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+}
+
+.social-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.social-btn:hover {
+    transform: translateY(-5px); /* Более выраженный подъем */
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.6), 0 0 50px rgba(255, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.2); /* Увеличиваем прозрачность при наведении */
+}
+
+/* Стилизация поля выбора роли */
+select {
+    width: 100%; /* Ширина на всю доступную область */
+    padding: 12px; /* Внутренний отступ */
+    margin-bottom: 20px; /* Отступ снизу */
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Граница с красным оттенком */
+    border-radius: 12px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    color: #fff; /* Белый цвет текста */
+    transition: all 0.3s ease; /* Плавные переходы */
+    backdrop-filter: blur(10px); /* Стеклянный эффект */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    outline: none; /* Убираем стандартный outline */
+    cursor: pointer; /* Курсор в виде указателя */
+    appearance: none; /* Убираем стандартный стиль браузера */
+    -webkit-appearance: none; /* Для Safari */
+    -moz-appearance: none; /* Для Firefox */
+}
+
+/* Кастомная стрелка для выпадающего списка */
+select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff0000'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e"); /* Красная стрелка */
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* Позиция стрелки */
+    background-size: 16px; /* Размер стрелки */
+}
+
+/* Эффект при наведении на поле выбора */
+select:hover {
+    border-color: rgba(255, 0, 0, 0.5); /* Ярче граница */
+    background: rgba(255, 255, 255, 0.15); /* Увеличение прозрачности */
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3); /* Тень с красным оттенком */
+}
+
+/* Эффект при фокусе на поле выбора */
+select:focus {
+    border-color: #ff0000; /* Красная граница */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Яркая тень */
+    background: rgba(255, 255, 255, 0.2); /* Увеличение прозрачности */
+}
+
+/* Стилизация опций в выпадающем списке */
+select option {
+    background: #1a0000; /* Темный фон для опций */
+    color: #fff; /* Белый цвет текста */
+    padding: 10px; /* Внутренний отступ */
+}
+
+/* Анимация появления поля выбора */
+@keyframes fadeInSelect {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+select {
+    animation: fadeInSelect 0.3s ease-in-out; /* Анимация появления */
+}
+
+/* Градиентный фон для поля выбора */
+select {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.1), rgba(128, 0, 0, 0.1));
+}
+
+/* Анимация градиента при наведении */
+@keyframes gradientHoverSelect {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+select:hover {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.2), rgba(128, 0, 0, 0.2));
+    background-size: 200% 200%;
+    animation: gradientHoverSelect 2s ease infinite;
+}
+
+/* Стилизация текста лейбла */
+label[for="role"] {
+    display: block; /* Блочный элемент */
+    margin-bottom: 10px; /* Отступ снизу */
+    font-size: 0.9rem; /* Размер шрифта */
+    color: rgba(255, 255, 255, 0.8); /* Полупрозрачный цвет текста */
+    animation: fadeIn 0.3s ease-in-out; /* Анимация появления */
+}
+
+/* Эффект при наведении на лейбл */
+label[for="role"]:hover {
+    color: #ff0000; /* Красный цвет текста */
+}
+
+/* Стилизация текстового поля для описания проекта */
+textarea {
+    width: calc(100% - 24px); /* Ширина с учетом padding */
+    padding: 12px; /* Внутренний отступ */
+    margin-bottom: 20px; /* Отступ снизу */
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Граница с красным оттенком */
+    border-radius: 12px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    color: #fff; /* Белый цвет текста */
+    transition: all 0.3s ease; /* Плавные переходы */
+    backdrop-filter: blur(10px); /* Стеклянный эффект */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    resize: none; /* Запрет изменения размера */
+    outline: none; /* Убираем стандартный outline */
+    cursor: text; /* Курсор в виде текста */
+}
+
+/* Эффект при наведении на текстовое поле */
+textarea:hover {
+    border-color: rgba(255, 0, 0, 0.5); /* Ярче граница */
+    background: rgba(255, 255, 255, 0.15); /* Увеличение прозрачности */
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3); /* Тень с красным оттенком */
+}
+
+/* Эффект при фокусе на текстовое поле */
+textarea:focus {
+    border-color: #ff0000; /* Красная граница */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Яркая тень */
+    background: rgba(255, 255, 255, 0.2); /* Увеличение прозрачности */
+}
+
+/* Плейсхолдер для текстового поля */
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Полупрозрачный цвет плейсхолдера */
+    font-style: italic; /* Курсивный шрифт */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Эффект при фокусе на плейсхолдер */
+textarea:focus::placeholder {
+    color: rgba(255, 255, 255, 0.3); /* Более прозрачный цвет */
+}
+
+/* Анимация появления текстового поля */
+@keyframes fadeInTextarea {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+textarea {
+    animation: fadeInTextarea 0.3s ease-in-out; /* Анимация появления */
+}
+
+/* Градиентный фон для текстового поля */
+textarea {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.1), rgba(128, 0, 0, 0.1));
+}
+
+/* Анимация градиента при наведении */
+@keyframes gradientHoverTextarea {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+textarea:hover {
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.2), rgba(128, 0, 0, 0.2));
+    background-size: 200% 200%;
+    animation: gradientHoverTextarea 2s ease infinite;
+}
+
+/* Контейнер для подписки на рассылку */
+.subscribe-container {
+    margin-bottom: 20px; /* Отступ снизу */
+    padding: 10px; /* Внутренний отступ */
+    background: rgba(255, 255, 255, 0.05); /* Полупрозрачный фон */
+    border-radius: 12px; /* Закругленные углы */
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Граница с красным оттенком */
+    backdrop-filter: blur(10px); /* Стеклянный эффект */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+/* Эффект при наведении на контейнер */
+.subscribe-container:hover {
+    background: rgba(255, 255, 255, 0.1); /* Увеличение прозрачности */
+    border-color: rgba(255, 0, 0, 0.5); /* Ярче граница */
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4); /* Тень с красным оттенком */
+}
+
+/* Кастомный чекбокс */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8); /* Цвет текста */
+    user-select: none; /* Запрет выделения текста */
+}
+
+/* Скрытие стандартного чекбокса */
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Стилизация кастомного чекбокса */
+.checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон */
+    border: 1px solid rgba(255, 0, 0, 0.3); /* Граница с красным оттенком */
+    border-radius: 6px; /* Закругленные углы */
+    margin-right: 10px; /* Отступ справа */
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+/* Эффект при наведении на чекбокс */
+.custom-checkbox:hover .checkmark {
+    background: rgba(255, 255, 255, 0.2); /* Увеличение прозрачности */
+    border-color: rgba(255, 0, 0, 0.5); /* Ярче граница */
+}
+
+/* Стилизация галочки */
+.checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #ff0000; /* Красная галочка */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); /* Поворот для галочки */
+}
+
+/* Показ галочки при выборе */
+.custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+}
+
+/* Анимация галочки */
+@keyframes checkmarkAnimation {
+    0% {
+        transform: rotate(45deg) scale(0);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+    animation: checkmarkAnimation 0.3s ease; /* Анимация появления галочки */
+}
+
+/* Стилизация текста подписки */
+.custom-checkbox span {
+    color: rgba(255, 255, 255, 0.8); /* Цвет текста */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Эффект при наведении на текст */
+.custom-checkbox:hover span {
+    color: #ff0000; /* Красный цвет текста */
+}
+
+/* Ссылка в тексте подписки */
+.custom-checkbox a {
+    color: #ff0000; /* Красный цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Эффект при наведении на ссылку */
+.custom-checkbox a:hover {
+    color: #800000; /* Бордовый цвет ссылки */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Telegram кнопка */
+.telegram-btn {
+    background: linear-gradient(45deg, #000000, #0088cc, #0055aa);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.telegram-btn i {
+    color: #00ffff; /* Цвет иконки в стиле хакера (бирюзовый) */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    animation: glowIcon 2s infinite alternate;
+    margin-right: 15px; /* Увеличиваем отступ справа от иконки */
+    font-size: 24px; /* Увеличиваем размер иконки */
+}
+
+/* Google кнопка */
+.google-btn {
+    background: linear-gradient(45deg, #000000, #dd4b39, #c53727);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.google-btn i {
+    color: #ff4500; /* Оранжево-красный цвет */
+    text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+    animation: glowIcon 2s infinite alternate;
+    margin-right: 15px; /* Увеличиваем отступ справа от иконки */
+    font-size: 24px; /* Увеличиваем размер иконки */
+}
+
+/* Facebook кнопка */
+.facebook-btn {
+    background: linear-gradient(45deg, #000000, #3b5998, #2d4373);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.facebook-btn i {
+    color: #0099ff; 
+    text-shadow: 0 0 10px #0099ff, 0 0 20px #0099ff;
+    animation: glowIcon 2s infinite alternate;
+    margin-right: 15px; /* Увеличиваем отступ справа от иконки */
+    font-size: 24px; /* Увеличиваем размер иконки */
+}
+
+/* Анимация свечения для иконок */
+@keyframes glowIcon {
+    0% {
+        text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+    }
+    100% {
+        text-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+    }
+}
+
+/* Дополнительный эффект для текста внутри кнопок */
+.social-btn span {
+    font-weight: 600;
+    letter-spacing: 1px; /* Увеличиваем расстояние между буквами */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+.social-btn:hover span {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+}

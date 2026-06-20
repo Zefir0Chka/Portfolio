@@ -1,0 +1,1509 @@
+/* Основные стили для body и html */
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+}
+
+/* Добавим глобальные анимации для плавного появления элементов */
+body {
+    animation: fadeIn 1s ease-out; /* Анимация для плавного появления страницы */
+}
+
+/* Глобальные стили для ссылок */
+a {
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover {
+    color: white;
+    opacity: 0.8; /* Легкое затемнение при наведении */
+}
+
+/* Глобальные стили для кнопок */
+button {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Глобальные стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInDown 0.5s ease-out; /* Анимация для заголовков */
+}
+
+/* Глобальные стили для параграфов */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    animation: fadeInUp 0.5s ease-out; /* Анимация для текста */
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Глобальные стили для разделов */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    body, html {
+        font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px; /* Уменьшаем размер заголовков для мобильных */
+    }
+
+    button {
+        width: 100%; /* Кнопки занимают всю ширину на мобильных */
+        padding: 15px;
+    }
+
+    section {
+        padding: 50px 20px; /* Уменьшаем отступы для мобильных */
+    }
+}
+
+/* Секция: Header */
+header {
+    background-color: maroon;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    animation: fadeInDown 1s ease-out;
+}
+
+header .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+header .nav-links li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header .nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: red;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+header .nav-links li a:hover {
+    color: red;
+    transform: translateY(-3px);
+}
+
+header .nav-links li a:hover::after {
+    width: 100%;
+}
+
+header .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    animation: fadeInDown 1s ease-out;
+}
+
+header .hamburger-menu span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+header .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+header .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+header .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: maroon;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    header .nav-links.active {
+        display: flex;
+    }
+
+    header .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* Секция: Welcome Section */
+.welcome-section {
+    background-color: black;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-section .welcome-header h1 {
+    color: red;
+    font-size: 36px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.welcome-section .welcome-header p {
+    color: white;
+    font-size: 18px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.welcome-section .user-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.welcome-section .info-item {
+    color: white;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.welcome-section .info-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.welcome-section .info-item .highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.welcome-section .cta-buttons {
+    margin-top: 30px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.welcome-section .cta-buttons .cta-button {
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section .cta-buttons .cta-button:hover {
+    background-color: red;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .welcome-section .user-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-section .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-section .cta-buttons .cta-button {
+        margin: 5px 0;
+    }
+}
+
+/* Секция: Widgets */
+.widgets {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: maroon;
+    position: relative;
+    overflow: hidden;
+}
+
+.widgets .widget {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.widgets .widget:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.widgets .widget:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.widgets .widget:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.widgets .widget:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.widgets .widget h2 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.widgets .widget p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.widgets .widget .widget-link {
+    color: red;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.widgets .widget .widget-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: red;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.widgets .widget .widget-link:hover {
+    color: white;
+}
+
+.widgets .widget .widget-link:hover::after {
+    width: 100%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widgets .widget {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .widgets .widget:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Секция: Analytics */
+.analytics {
+    background-color: black;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.analytics .analytics-header h2 {
+    color: red;
+    font-size: 36px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.analytics .analytics-header p {
+    color: white;
+    font-size: 18px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.analytics .analytics-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
+    gap: 2rem; /* Расстояние между карточками */
+    margin-top: 30px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.analytics .analytics-card {
+    background-color: maroon;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.analytics .analytics-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.analytics .analytics-card:hover::before {
+    left: 100%;
+}
+
+.analytics .analytics-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(128, 0, 0, 0.9);
+}
+
+.analytics .analytics-card h3 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.analytics .analytics-card p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-header i {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 300px; /* Фиксированная высота для графика */
+    margin: 1rem 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-footer p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.card-footer small {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.last-updated {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.coverage {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для графиков */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.analytics .analytics-card {
+    animation: scaleIn 0.5s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .analytics .analytics-content {
+        grid-template-columns: 1fr; /* Один столбец на мобильных устройствах */
+    }
+
+    .analytics .analytics-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .analytics .analytics-card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Секция: Testimonials */
+.testimonials {
+    background-color: maroon;
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы блока */
+}
+
+.testimonials h2 {
+    color: red;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.testimonials .subheading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out; /* Анимация для подзаголовка */
+}
+
+.testimonials .testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonials .testimonial-card {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials .testimonial-card:hover {
+    transform: translateY(-10px); /* Поднимаем карточку при наведении */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Тень для эффекта поднятия */
+}
+
+.testimonials .testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.testimonials .testimonial-card:hover::before {
+    left: 100%; /* Эффект "световой полосы" при наведении */
+}
+
+.testimonials .testimonial-card p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonials .testimonial-card span {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .testimonials .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials .testimonial-cards {
+        flex-direction: column;
+    }
+}
+
+/* Секция: Features */
+.features {
+    background-color: black;
+    padding: 80px 20px; /* Увеличим отступы для большего простора */
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы блока */
+}
+
+.features h2 {
+    color: red;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.features .subheading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для подзаголовка */
+}
+
+.features .feature-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px; /* Добавим промежутки между элементами */
+}
+
+.features .feature-item {
+    background-color: maroon;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    width: 22%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.features .feature-item:hover {
+    transform: translateY(-10px); /* Поднимаем элемент при наведении */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3); /* Тень с красным оттенком */
+    background-color: rgba(128, 0, 0, 0.9); /* Легкое изменение фона */
+}
+
+.features .feature-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.features .feature-item:hover::before {
+    left: 100%; /* Эффект "световой полосы" при наведении */
+}
+
+.features .feature-item h3 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.features .feature-item:hover h3 {
+    color: white; /* Изменение цвета заголовка при наведении */
+}
+
+.features .feature-item p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
+}
+
+.features .feature-item:hover p {
+    opacity: 0.8; /* Легкое затемнение текста при наведении */
+}
+
+.features .cta {
+    margin-top: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для кнопки CTA */
+}
+
+.features .cta .cta-button {
+    background-color: maroon;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.features .cta .cta-button:hover {
+    background-color: red;
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .features .feature-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .features .feature-list {
+        flex-direction: column;
+    }
+
+    .features .cta .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Секция: Usage Table */
+.usage-table-section {
+    background-color: maroon;
+    padding: 80px 20px; /* Увеличим отступы для большего простора */
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы блока */
+}
+
+.usage-table-section h2 {
+    color: red;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.usage-table-section .subheading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для подзаголовка */
+}
+
+.usage-table-section .usage-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    animation: fadeIn 1.5s ease-out; /* Анимация для таблицы */
+}
+
+.usage-table-section .usage-table th, .usage-table-section .usage-table td {
+    border: 1px solid white;
+    padding: 15px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.usage-table-section .usage-table th {
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.usage-table-section .usage-table td {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.usage-table-section .usage-table tr:hover td {
+    background-color: rgba(255, 0, 0, 0.2); /* Подсветка строки при наведении */
+    color: white;
+}
+
+.usage-table-section .usage-table tr:hover th {
+    background-color: rgba(255, 0, 0, 0.5); /* Подсветка заголовка строки при наведении */
+}
+
+.usage-table-section .cta {
+    margin-top: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для кнопки CTA */
+}
+
+.usage-table-section .cta .cta-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.usage-table-section .cta .cta-button:hover {
+    background-color: red;
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .usage-table-section .usage-table {
+        display: block;
+        overflow-x: auto; /* Добавляем горизонтальную прокрутку для таблицы */
+    }
+
+    .usage-table-section .cta .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Секция: Premium Unlock */
+.premium-unlock-section {
+    background-color: black;
+    padding: 80px 20px; /* Увеличим отступы для большего простора */
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы блока */
+}
+
+.premium-unlock-section h2 {
+    color: red;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.premium-unlock-section .subheading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out; /* Анимация для подзаголовка */
+}
+
+.premium-unlock-section .premium-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Добавим промежутки между элементами */
+}
+
+.premium-unlock-section .premium-features li {
+    color: white;
+    margin: 10px 0;
+    padding: 15px 20px;
+    background-color: rgba(128, 0, 0, 0.5); /* Полупрозрачный фон для элементов */
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.premium-unlock-section .premium-features li:hover {
+    transform: translateY(-5px); /* Поднимаем элемент при наведении */
+    background-color: rgba(255, 0, 0, 0.3); /* Изменение фона при наведении */
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2); /* Тень при наведении */
+}
+
+.premium-unlock-section .premium-features li i {
+    color: red;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.premium-unlock-section .premium-features li:hover i {
+    color: white; /* Изменение цвета иконки при наведении */
+}
+
+.premium-unlock-section .cta-button {
+    background-color: maroon;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    animation: fadeInUp 1s ease-out; /* Анимация для кнопки */
+}
+
+.premium-unlock-section .cta-button:hover {
+    background-color: red;
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.premium-unlock-section .small-text {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.8;
+    animation: fadeInUp 1s ease-out; /* Анимация для текста */
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .premium-unlock-section .premium-features li {
+        width: 100%; /* На мобильных элементам занимают всю ширину */
+    }
+
+    .premium-unlock-section .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+/* Секция: FAQ */
+.faq {
+    background-color: maroon;
+    padding: 80px 20px; /* Увеличим отступы для большего простора */
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы блока */
+}
+
+.faq h2 {
+    color: red;
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.faq .subheading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-out; /* Анимация для подзаголовка */
+}
+
+.faq .faq-items {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq .faq-item {
+    background-color: black;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.faq .faq-item:hover {
+    transform: translateY(-5px); /* Поднимаем элемент при наведении */
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3); /* Тень при наведении */
+}
+
+.faq .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.faq .faq-question:hover {
+    color: red; /* Изменение цвета текста при наведении */
+}
+
+.faq .faq-question .faq-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq .faq-item.active .faq-icon {
+    transform: rotate(180deg); /* Поворот иконки при открытии */
+}
+
+.faq .faq-answer {
+    display: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px 0;
+    animation: fadeIn 0.5s ease-out; /* Анимация для ответа */
+}
+
+.faq .faq-item.active .faq-answer {
+    display: block; /* Показываем ответ при активном состоянии */
+}
+
+.faq .cta {
+    margin-top: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для кнопки CTA */
+}
+
+.faq .cta .cta-button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.faq .cta .cta-button:hover {
+    background-color: red;
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .faq .faq-question {
+        font-size: 16px;
+    }
+
+    .faq .faq-answer {
+        font-size: 14px;
+    }
+
+    .faq .cta .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Основные стили для футера */
+footer {
+    background-color: black;
+    color: white;
+    padding: 80px 0 0; /* Увеличим верхний отступ */
+    text-align: center;
+    overflow: hidden; /* Чтобы анимации не выходили за пределы */
+}
+
+.footer-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out; /* Анимация для контейнера */
+}
+
+/* Стили для каждой секции */
+.footer-box {
+    flex: 1;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.footer-box:hover {
+    transform: translateY(-10px); /* Поднимаем секцию при наведении */
+}
+
+/* Логотип и описание */
+.footer-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out; /* Анимация для логотипа */
+}
+
+.footer-logo .description {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.footer-logo .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-logo .social-links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-logo .social-links a:hover {
+    color: red;
+    transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+
+/* Быстрые ссылки и ресурсы */
+.footer-links h4 {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: red;
+    padding-left: 5px; /* Сдвиг текста при наведении */
+}
+
+/* Контактная информация */
+.footer-contact h4 {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-out; /* Анимация для заголовка */
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-contact ul li:hover {
+    transform: translateX(10px); /* Сдвиг элемента при наведении */
+}
+
+.footer-contact ul li i {
+    color: red;
+    font-size: 18px;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+    background-color: maroon;
+    padding: 20px 0;
+    margin-top: 50px;
+    animation: fadeInUp 1s ease-out; /* Анимация для нижней части */
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-bottom .legal-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom .legal-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-bottom .legal-links li a:hover {
+    color: red;
+    transform: scale(1.1); /* Увеличение ссылки при наведении */
+}
+
+/* Анимации */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .footer-content .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-links ul li a:hover {
+        padding-left: 0; /* Убираем сдвиг на мобильных */
+    }
+
+    .footer-contact ul li:hover {
+        transform: translateX(0); /* Убираем сдвиг на мобильных */
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
